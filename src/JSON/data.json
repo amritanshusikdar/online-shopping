@@ -1,0 +1,91 @@
+[
+    {
+        "id": 0,
+        "name": "JBL T500BT On Ear Bluetooth Wireless Headphones",
+        "description": "The new era of listening - deep, powerful JBL Pure Bass brings you the highest quality, and most precise sound for a crystal clear level of audio meant to be felt, not just heard.",
+        "price": 45.72,
+        "path": "content/product_0.jpg",
+        "quantity": 0
+    },
+
+    {
+        "id": 1,
+        "name": "Sony SRS-XB12 Wireless Bluetooth Speaker",
+        "description": "Compact yet powerful, the SRS-XB12 portable wireless speaker features EXTRA BASS for deep, punchy sound and a battery life of up to 16 hours. It's also waterproof and dustproof for your peace of mind.",
+        "price": 60,
+        "path": "content/product_1.jpg",
+        "quantity": 0
+    },
+
+    {
+        "id": 2,
+        "name": "Apple iPhone 11 Pro 256GB",
+        "description": "With a 5.8-inch Super Retina XDR OLED display, Water and dust resistance, Triple-camera system with 12MP Ultra Wide, Wide, and Telephoto cameras, Face ID and Apple Pay.",
+        "price": 1440,
+        "path": "content/product_2.jpg",
+        "quantity": 0
+    },
+
+    {
+        "id": 3,
+        "name": "Apple Watch Series 5",
+        "description": "Now with features like the Always-On Retina display, calling, texting and Apple Pay. With advanced workout metrics, GPS, and water resistance to 50 meters, it’s made for all the ways you exercise.",
+        "price": 460,
+        "path": "content/product_3.jpg",
+        "quantity": 0
+    },
+
+    {
+        "id": 4,
+        "name": "ZMI Power Bank 20000mAh",
+        "description": "The latest Powerbank Xiaomi ZMI Aura QB822 has two USB ports, a bi-directional USB-C port and a microUSB input and an LED indicatorto monitor the charge status of the power bank.",
+        "price": 925,
+        "path": "content/product_4.jpg",
+        "quantity": 0
+    },
+
+    {
+        "id": 5,
+        "name": "Apple iPad Pro 12.9\"",
+        "description": "The 8‑core graphics processor delivers fluid performance, features pro cameras that can transform reality. Can be used with touch, pencil, keyboard and now trackpad.",
+        "price": 925,
+        "path": "content/product_5.jpg",
+        "quantity": 0
+    },
+
+    {
+        "id": 6,
+        "name": "Amazon Echo Dot 3rd Gen",
+        "description": "With a new speaker and design, Echo Dot is a voice-controlled smart speaker with Alexa, designed for any room. Ask for music, news, information, control compatible smart home devices and more. ",
+        "price": 35.74,
+        "path": "content/product_6.jpg",
+        "quantity": 0
+    },
+
+    {
+        "id": 7,
+        "name": "Apple Airpods Pro",
+        "description": "AirPods Pro have been designed to deliver Active Noise Cancellation for immersive sound, Transparency mode, and a customizable fit for all-day comfort.",
+        "price": 230.12,
+        "path": "content/product_7.jpg",
+        "quantity": 0
+    },
+
+    {
+        "id": 8,
+        "name": "SanDisk Cruzer 64GB USB 3.0",
+        "description": "SanDisk Cruzer Ultra Flair 64GB USB 30 SDCZ73064GG46 Storage USB Memory Sticks",
+        "price": 35,
+        "path": "content/product_8.jpg",
+        "quantity": 0
+    },
+
+    {
+        "id": 9,
+        "name": "Samsung T5 2TB USB 3.1 External SSD",
+        "description": "Performance of up to 540 MB/s, up to 4.9x faster than external HDD,USB 3.1 Gen 2 (Up to 10Gbps). Backwards compatible.",
+        "price": 335,
+        "path": "content/product_9.jpg",
+        "quantity": 0
+    }
+]
