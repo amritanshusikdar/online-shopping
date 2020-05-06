@@ -2,16 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import { FaShoppingBag, FaSearchDollar } from "react-icons/fa";
-// import { ToastProvider, useToasts } from "react-toast-notifications";
 
 const NavigationBar = (props) => {
-    // const { addToast } = useToasts();
-    // const Something = () => {
-    //     addToast("Damnson", {
-    //         appearance: "success",
-    //         autoDismiss: true,
-    //     });
-    // };
     return (
         <React.Fragment>
             <Navbar bg="dark" variant="dark" sticky="top">
