@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import { FaShoppingBag, FaSearchDollar } from "react-icons/fa";
 // import { ToastProvider, useToasts } from "react-toast-notifications";
@@ -18,9 +19,9 @@ const NavigationBar = (props) => {
                     The Savage Shopping Spree
                 </Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link href="products">Products</Nav.Link>
-                    <Nav.Link href="shopping-cart">Shopping Cart</Nav.Link>
-                    <Nav.Link href="checkout">CheckOut</Nav.Link>
+                    <Link to="/">Products</Link>
+                    <Link to="/shopping-cart">Shopping Cart</Link>
+                    <Link to="/checkout">CheckOut</Link>
                 </Nav>
                 <Form inline>
                     <FormControl

@@ -51,36 +51,21 @@ class App extends Component {
 
     render() {
         return (
-            /*------------------------------------------------------------------ */
-            // <Router>
-            //     <React.Fragment>
-            //         <NavigationBar
-            //             onProducts={this.showProducts}
-            //             onShoppingCart={this.showShoppingCart}
-            //         />
-            //         <Switch>
-            //             <Route path="/products" component={this.showProducts} />
-            //             <Route
-            //                 path="/shopping-cart"
-            //                 component={this.showShoppingCart}
-            //             />
-            //         </Switch>
-            //     </React.Fragment>
-            // </Router>
-            /*------------------------------------------------------------------ */
-            <React.Fragment>
-                <NavigationBar />
-                <Products
-                    jsonData={this.state.items}
-                    onAddProduct={this.handleAddProduct}
-                />
-                <ShoppingCart
-                    items={this.state.items}
-                    onAddProduct={this.handleAddProduct}
-                    onSubtractProduct={this.handleSubtractProduct}
-                />
-                <Checkout items={this.state.items} />
-            </React.Fragment>
+            <Router>
+                <React.Fragment>
+                    <NavigationBar
+                        onProducts={this.showProducts}
+                        onShoppingCart={this.showShoppingCart}
+                    />
+                    <Switch>
+                        <Route exact path="/" component={this.showProducts} />
+                        <Route
+                            path="/shopping-cart"
+                            component={this.showShoppingCart}
+                        />
+                    </Switch>
+                </React.Fragment>
+            </Router>
         );
     }
 }
