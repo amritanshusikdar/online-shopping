@@ -1,0 +1,9 @@
+.center-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.shadow-cool {
+    box-shadow: 1px 1px 10px 1px lightslategray;
+}
