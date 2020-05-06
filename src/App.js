@@ -46,7 +46,13 @@ class App extends Component {
     }
 
     showShoppingCart() {
-        return <ShoppingCart items={this.state.items} />;
+        return (
+            <ShoppingCart
+                onAddProduct={this.handleAddProduct}
+                onSubtractProduct={this.handleSubtractProduct}
+                items={this.state.items}
+            />
+        );
     }
 
     render() {
