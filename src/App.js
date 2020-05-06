@@ -63,6 +63,9 @@ class App extends Component {
                             path="/shopping-cart"
                             component={this.showShoppingCart}
                         />
+                        <Route path="/checkout">
+                            <Checkout items={this.state.items} />
+                        </Route>
                     </Switch>
                 </React.Fragment>
             </Router>
