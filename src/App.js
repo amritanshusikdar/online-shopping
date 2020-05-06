@@ -21,9 +21,10 @@ class App extends Component {
         this.handleSubtractProduct = this.handleSubtractProduct.bind(this);
         this.showProducts = this.showProducts.bind(this);
         this.showShoppingCart = this.showShoppingCart.bind(this);
+        this.handleReset = this.handleReset.bind(this);
     }
 
-    Toast(titleN, itemName, notifType) {
+    makeToast(titleN, itemName, notifType) {
         return store.addNotification({
             title: titleN,
             message: itemName,
@@ -48,8 +49,7 @@ class App extends Component {
         items[index] = { ...item };
         items[index].quantity++;
         this.setState({ total, items });
-        // this.Toast(item, "success", "add");
-        this.Toast("Product Added to Cart!", items[index].name, "success");
+        this.makeToast("Product Added to Cart!", items[index].name, "success");
     }
 
     handleSubtractProduct(item) {
@@ -65,9 +65,9 @@ class App extends Component {
         const message =
             total !== 0
                 ? items[index].name
-                : "All items from the Cart have been removed!";
+                : "All items from the Cart have been removed.";
         const notifType = title !== "Empty Cart!" ? "danger" : "warning";
-        this.Toast(title, message, notifType);
+        this.makeToast(title, message, notifType);
     }
 
     showProducts() {
@@ -89,6 +89,17 @@ class App extends Component {
         );
     }
 
+    handleReset() {
+        let items = [...this.state.items];
+        items.map((item) => (item.quantity = 0));
+        this.setState({ total: 0, items });
+        this.makeToast(
+            "Reset Successful!",
+            "Cart has been successfully reset.",
+            "info"
+        );
+    }
+
     render() {
         return (
             <React.Fragment>
@@ -98,6 +109,8 @@ class App extends Component {
                         <NavigationBar
                             onProducts={this.showProducts}
                             onShoppingCart={this.showShoppingCart}
+                            total={this.state.total}
+                            onReset={this.handleReset}
                         />
                         <Switch>
                             <Route
