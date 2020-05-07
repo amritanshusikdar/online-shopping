@@ -115,14 +115,14 @@ class App extends Component {
                         <Switch>
                             <Route
                                 exact
-                                path="/"
+                                path="/online-shopping/"
                                 component={this.showProducts}
                             />
                             <Route
-                                path="/shopping-cart"
+                                path="/online-shopping/shopping-cart/"
                                 component={this.showShoppingCart}
                             />
-                            <Route path="/checkout">
+                            <Route path="/online-shopping/checkout/">
                                 <Checkout items={this.state.items} />
                             </Route>
                         </Switch>

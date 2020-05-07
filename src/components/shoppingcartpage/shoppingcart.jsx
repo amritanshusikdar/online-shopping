@@ -15,7 +15,7 @@ class ShoppingCart extends React.Component {
                 <React.Fragment>
                     <br />
                     <Container style={{ textAlign: "center" }}>
-                        <Link to="/checkout">
+                        <Link to="/online-shopping/checkout/">
                             <Button variant="warning">
                                 <FaMoneyCheck
                                     className="mr-5"
@@ -43,7 +43,7 @@ class ShoppingCart extends React.Component {
                     </ListGroup>
                     <br />
                     <Container style={{ textAlign: "center" }}>
-                        <Link to="/checkout">
+                        <Link to="/online-shopping/checkout/">
                             <Button variant="warning">
                                 <FaMoneyCheck
                                     className="mr-5"

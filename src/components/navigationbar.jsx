@@ -14,7 +14,7 @@ const NavigationBar = (props) => {
                 variant="dark"
                 sticky="top"
             >
-                <Link to="/">
+                <Link to="/online-shopping/">
                     <Navbar.Brand>THE SAVAGE SHOPPING SPREE</Navbar.Brand>
                 </Link>
 
@@ -30,13 +30,12 @@ const NavigationBar = (props) => {
                     </strong>
                 </Navbar.Text>
                 <div>
-                    <Link to="/">
+                    <Link to="/online-shopping/">
                         <Button variant="outline-success" className="mr-2">
                             <AiTwotoneHome className="mr-1" fontSize="1.3em" />
                             Home{" "}
                         </Button>
                     </Link>
-
                     <Button
                         onClick={() => props.onReset()}
                         variant="outline-info"
@@ -45,12 +44,13 @@ const NavigationBar = (props) => {
                         <RiRefreshLine className="mr-1" fontSize="1.3em" />{" "}
                         Reset Cart
                     </Button>
-                    <Link to="/shopping-cart">
+                    <Link to="/online-shopping/shopping-cart/">
                         <Button variant="outline-light" className="mr-2">
                             <FaShoppingBag className="mr-1" fontSize="1.2em" />{" "}
                             Shopping Cart
                         </Button>
                     </Link>
+                    w
                 </div>
             </Navbar>
         </React.Fragment>
