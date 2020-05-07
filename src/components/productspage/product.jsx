@@ -7,16 +7,6 @@ import "react-notifications-component/dist/theme.css";
 import "animate.css";
 
 class Product extends React.Component {
-    ProductAddedSuccessfully = () => {
-        return (
-            <div>
-                <div>
-                    <h4>Alligator.io</h4>
-                    <p>Has joined the chat</p>
-                </div>
-            </div>
-        );
-    };
     render() {
         return (
             <Card className="shadow-lg">

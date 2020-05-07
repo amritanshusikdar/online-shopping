@@ -5,7 +5,7 @@
         "description": "The new era of listening - deep, powerful JBL Pure Bass brings you the highest quality, and most precise sound for a crystal clear level of audio meant to be felt, not just heard.",
         "price": 45.72,
         "path": "content/product_0.jpg",
-        "quantity": 0
+        "quantity": 8
     },
 
     {
@@ -14,7 +14,7 @@
         "description": "Compact yet powerful, the SRS-XB12 portable wireless speaker features EXTRA BASS for deep, punchy sound and a battery life of up to 16 hours. It's also waterproof and dustproof for your peace of mind.",
         "price": 60,
         "path": "content/product_1.jpg",
-        "quantity": 0
+        "quantity": 2
     },
 
     {
@@ -23,7 +23,7 @@
         "description": "With a 5.8-inch Super Retina XDR OLED display, Water and dust resistance, Triple-camera system with 12MP Ultra Wide, Wide, and Telephoto cameras, Face ID and Apple Pay.",
         "price": 1440,
         "path": "content/product_2.jpg",
-        "quantity": 0
+        "quantity": 4
     },
 
     {
