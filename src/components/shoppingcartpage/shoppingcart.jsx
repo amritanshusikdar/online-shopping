@@ -13,6 +13,20 @@ class ShoppingCart extends React.Component {
         } else
             return (
                 <React.Fragment>
+                    <br />
+                    <Container style={{ textAlign: "center" }}>
+                        <Link to="/checkout">
+                            <Button variant="warning">
+                                <FaMoneyCheck
+                                    className="mr-5"
+                                    fontSize="10em"
+                                />
+                                <strong>CHECKOUT</strong>
+                                <RiArrowRightSLine fontSize="10em" />
+                            </Button>
+                        </Link>
+                    </Container>
+                    <br />
                     <ListGroup>
                         {this.props.items
                             .filter((item) => item.quantity > 0)

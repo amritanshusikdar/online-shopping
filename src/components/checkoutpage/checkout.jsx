@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Table } from "react-bootstrap";
+import { Card, Image, Table } from "react-bootstrap";
 import Empty from "../empty-page";
 
 class Checkout extends React.Component {
@@ -28,9 +28,10 @@ class Checkout extends React.Component {
                                 <tr>
                                     <th>Sr. No.:</th>
                                     <th>Product Name</th>
+                                    <th>Product Image</th>
                                     <th>Price</th>
                                     <th>Quantity</th>
-                                    <th>Sum</th>
+                                    <th>Total</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -42,6 +43,15 @@ class Checkout extends React.Component {
                                                 <tr key={idx}>
                                                     <td>{idx + 1}</td>
                                                     <td> {item.name} </td>
+                                                    <td>
+                                                        {" "}
+                                                        <Image
+                                                            thumbnail
+                                                            width={100}
+                                                            height="auto"
+                                                            src={item.path}
+                                                        ></Image>{" "}
+                                                    </td>
                                                     <td> €{item.price} </td>
                                                     <td> {item.quantity} </td>
                                                     <td>
@@ -58,7 +68,12 @@ class Checkout extends React.Component {
                             </tbody>
                         </Table>
                         <Card.Footer className="text-right">
-                            <strong>GRAND TOTAL: €{grandTotal}</strong>
+                            <strong>
+                                GRAND TOTAL:{" "}
+                                <span style={{ fontSize: "2em" }}>
+                                    €{grandTotal.toFixed(2)}
+                                </span>
+                            </strong>
                         </Card.Footer>
                     </Card>
                 </React.Fragment>

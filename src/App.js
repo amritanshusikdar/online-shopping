@@ -34,8 +34,8 @@ class App extends Component {
             animationIn: ["animated", "fadeIn"],
             animationOut: ["animated", "fadeOut"],
             dismiss: {
-                duration: 3000,
-                onScreen: true,
+                duration: 1000,
+                onScreen: false,
                 pauseOnHover: true,
             },
         });
