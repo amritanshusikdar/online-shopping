@@ -38,7 +38,11 @@ class ShoppingCartItem extends React.Component {
                                         width={300}
                                         height={320}
                                         alt={this.props.item.name}
-                                        src={this.props.item.path}
+                                        src={
+                                            process.env.PUBLIC_URL +
+                                            "/" +
+                                            this.props.item.path
+                                        }
                                     />
                                 </Figure>
                             </Col>

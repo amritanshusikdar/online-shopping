@@ -6,9 +6,9 @@ class Products extends React.Component {
     render() {
         return (
             <CardColumns>
-                {this.props.jsonData.map((product) => (
+                {this.props.jsonData.map((product, idx) => (
                     <Product
-                        key={product.id}
+                        key={idx}
                         product={product}
                         name={product.name}
                         description={product.description}

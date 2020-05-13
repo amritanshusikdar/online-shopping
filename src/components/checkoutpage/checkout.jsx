@@ -49,7 +49,12 @@ class Checkout extends React.Component {
                                                             thumbnail
                                                             width={100}
                                                             height="auto"
-                                                            src={item.path}
+                                                            src={
+                                                                process.env
+                                                                    .PUBLIC_URL +
+                                                                "/" +
+                                                                item.path
+                                                            }
                                                         ></Image>{" "}
                                                     </td>
                                                     <td> €{item.price} </td>

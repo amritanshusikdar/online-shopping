@@ -1,6 +1,6 @@
 {
     "homepage": "http://amritanshusikdar.github.io/online-shopping",
-    "name": "shopping-cart",
+    "name": "online-shopping",
     "version": "0.1.0",
     "private": true,
     "dependencies": {

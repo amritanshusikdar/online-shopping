@@ -10,7 +10,10 @@ class Product extends React.Component {
     render() {
         return (
             <Card className="shadow-lg">
-                <Card.Img variant="top" src={this.props.path} />
+                <Card.Img
+                    variant="top"
+                    src={process.env.PUBLIC_URL + "/" + this.props.path}
+                />
                 <Card.Body>
                     <Card.Title>{this.props.name}</Card.Title>
                     <Card.Text>{this.props.description}</Card.Text>
